@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: redis-spring-boot-user
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 60000  # Timeout opcional
+      lettuce:
+        pool:
+          max-active: 10    # Número máximo de conexões no pool
+          max-idle: 10      # Máximo de conexões ociosas
+          max-wait: 3000    # Tempo máximo de espera por uma conexão
+          min-idle: 1       # Mínimo de conexões ociosas
